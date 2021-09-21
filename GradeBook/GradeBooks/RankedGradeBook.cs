@@ -1,10 +1,18 @@
+using GradeBook.Enums;
+
 namespace GradeBook.GradeBooks
 {
     public class RankedGradeBook : BaseGradeBook
     {
-        public RankedGradeBook(string name) : BaseGradeBook(name)
+        public RankedGradeBook(string name) : base(name)
         {
-            Type = StandardGradeBook.Ranked;
+            Type = GradeBookType.Ranked;
         }
+
+        public override char GetLetterGrade(double averageGrade)
+        {
+            return ;
+        }
+
     }
 }
